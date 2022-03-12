@@ -44,7 +44,7 @@
 		{{- end }}
 	{{- end }}
 
-	{{- partial "extra_head.html" . -}}
+	{{ block "extra_head" . }}{{ partial "extra_head.html" . }}{{ end }}
 </head>
 <body class="body">
 	<div class="container container--outer">
